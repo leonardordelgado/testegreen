@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  greenDb:
+    container_name: green_Db
+    environment:            
+      MYSQL_ROOT_PASSWORD: admin
+    volumes:
+      - ./dump:/docker-entrypoint-initdb.d     
+    image: mysql
+    ports: 
+      - "3306:3306"
