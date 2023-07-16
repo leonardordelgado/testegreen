@@ -18,3 +18,6 @@ CREATE TABLE boletos (
 	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY (id_lote) REFERENCES lotes(id)
 );
+INSERT INTO lotes (nome, ativo) VALUES ('0017', true);
+INSERT INTO lotes (nome, ativo) VALUES ('0018', true);
+INSERT INTO lotes (nome, ativo) VALUES ('0019', true);

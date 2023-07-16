@@ -1,4 +1,3 @@
-import fs from 'fs';
 import csv_parser from 'fast-csv';
 
 const csv = [];
@@ -11,10 +10,10 @@ function TratandoCsv(dto) {
     csv_parser
       .parseString(dto.buffer, options)
       .on('data', (row) => {
-        csv.push(row)
+        csv.push(row);
       })
       .on('end', () => {
-        resolve(csv)
+        resolve(csv);
       })
       .on('error', (error) => {
         reject(error);

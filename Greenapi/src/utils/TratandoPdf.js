@@ -19,7 +19,8 @@ async function readPages(dto, reader = (new PdfReader())) {
   });
 }
 async function parser(dto) {
-const result = await readPages(dto);
+  const result = await readPages(dto);
+
   for await (const pag of result) {
     const info = {
       nome: pag['4.816'][1],

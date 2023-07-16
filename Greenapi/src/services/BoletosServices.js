@@ -7,13 +7,11 @@ import TratandoCsv from '../utils/TratandoCsv.js';
 import TratandoPdf from '../utils/TratandoPdf.js';
 
 class BoletosServices {
-  // eslint-disable-next-line class-methods-use-this
   async BoletosPost(dto) {
     try {
       const lotes = await ModelLotes.findAll();
       const data = await TratandoCsv(dto);
 
-      // eslint-disable-next-line no-restricted-syntax
       for (const element of data) {
         const id_lote = lotes.find((lote) => lote.nome.includes(element.unidade));
         if (id_lote) {
@@ -103,7 +101,6 @@ class BoletosServices {
 
   async PdfCreat() {
     const boletos = await this.getBoletosAll();
-    const base = JSON.stringify(boletos);
     const pdfDoc = await PDFDocument.create();
     const page = pdfDoc.addPage();
     boletos.map((boleto) => {
