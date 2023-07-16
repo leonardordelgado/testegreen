@@ -1,5 +1,15 @@
 version: '3'
-services: 
+services:
+  GreenAPI:
+    image: node
+    build: ./Greenapi
+    depends_on:
+      - greenDb
+    networks:
+      - green
+    ports:
+      - 3000:3000
+
   greenDb:
     container_name: green_Db
     environment:            
@@ -9,3 +19,9 @@ services:
     image: mysql
     ports: 
       - "3306:3306"
+    networks:
+      - green
+
+networks:
+  green:
+    driver: bridge

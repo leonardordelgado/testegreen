@@ -4,7 +4,7 @@ class DatabaseService {
   constructor() {
     if (!DatabaseService.instance) {
       this.sequelize = new Sequelize('GreenDB', 'root', 'admin', {
-        host: 'localhost',
+        host: 'green_Db',
         dialect: 'mysql',
       });
 
