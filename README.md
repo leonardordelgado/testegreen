@@ -19,5 +19,5 @@ com o id da tabela de lotes "
 # POST http://localhost:3000/uploads/pdf
 "# Ao acessar essa rota enviar o arquivo PDF onde sera trato e ira dividir o salvando eles com o id da tabela boleto correspondente a ele 
 na pasta temps/pdf"
-# https://planetary-shuttle-954363.postman.co/workspace/green~99a1024f-0016-45af-972b-41142f04addc/overview?workspaceOnboarding=show
+# https://planetary-shuttle-954363.postman.co/workspace/green~99a1024f-0016-45af-972b-41142f04addc/overview?workspaceOnboarding=show](https://planetary-shuttle-954363.postman.co/workspace/green~99a1024f-0016-45af-972b-41142f04addc/collection/23308287-e5a4598f-2d24-4030-8a85-e218203e67ee/overview?action=share&creator=23308287)https://planetary-shuttle-954363.postman.co/workspace/green~99a1024f-0016-45af-972b-41142f04addc/collection/23308287-e5a4598f-2d24-4030-8a85-e218203e67ee/overview?action=share&creator=23308287
 "# link do invite do postman"
